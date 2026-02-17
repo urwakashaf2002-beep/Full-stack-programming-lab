@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Registration</title>
+<link rel="stylesheet" href="FormValidation.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left-panel">
+        <h1>Create<br>Account</h1>
+        <p>Join us and start your journey today 🌱</p>
+    </div>
+
+    <div class="right-panel">
+        <form id="form" autocomplete="off">
+
+            <div class="input-group">
+                <input type="text" id="name" placeholder=" ">
+                <label>Full Name</label>
+                <small id="nameError"></small>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="email" placeholder=" ">
+                <label>Email Address</label>
+                <small id="emailError"></small>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="age" placeholder=" ">
+                <label>Age</label>
+                <small id="ageError"></small>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder=" ">
+                <label>Password</label>
+                <small id="passError"></small>
+            </div>
+
+            <button type="button" onclick="validateForm()">Register</button>
+
+            <div id="successMsg" class="success"></div>
+
+        </form>
+    </div>
+
+</div>
+
+<script src="FormValidation.js"></script>
+</body>
+</html>

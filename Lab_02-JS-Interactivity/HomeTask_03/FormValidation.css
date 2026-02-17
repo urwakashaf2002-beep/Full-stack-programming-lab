@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f4f4;
+}
+
+.container{
+    display:flex;
+    width:900px;
+    height:550px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    border-radius:15px;
+    overflow:hidden;
+}
+
+/* Left Panel */
+.left-panel{
+    flex:1;
+    background:linear-gradient(135deg,#5f4376,#5f4376);
+    color:white;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.left-panel h1{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.left-panel p{
+    font-size:18px;       /* bigger tagline */
+    font-weight:500;
+    margin-top:10px;
+}
+
+/* Right Panel */
+.right-panel{
+    flex:1;
+    background:white;
+    padding:60px;
+    display:flex;
+    align-items:center;
+}
+
+form{
+    width:100%;
+}
+
+.input-group{
+    position:relative;
+    margin-bottom:30px;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px 0;       /* slightly larger input padding */
+    border:none;
+    border-bottom:2px solid #ccc;
+    font-size:18px;       /* larger input text */
+    outline:none;
+    background:transparent;
+    transition:0.3s;
+}
+
+.input-group label{
+    position:absolute;
+    left:0;
+    top:14px;
+    color:#3e1d58;
+    font-weight:650;      /* bolder labels */
+    transition:0.3s;
+    pointer-events:none;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label{
+    top:-10px;
+    font-size:16px;
+    font-weight: 700;
+    color:#3e1d58;
+}
+
+.input-group input:focus{
+    border-bottom:2px solid #9d4edd;
+}
+
+small{
+    color:red;
+    font-size:13px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#5f4376;
+    color:white;
+    font-size:18px;       /* bigger button text */
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#7b2cbf;
+}
+
+.success{
+    margin-top:15px;
+    text-align:center;
+    color:green;
+    font-weight:bold;
+    font-size:17px;
+}
