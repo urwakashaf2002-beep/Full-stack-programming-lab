@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(120deg, #485e75, #02263d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+}
+
+.calculator {
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    color: white;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: #3f2bae;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #796bc8;
+}
+
+.result {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
