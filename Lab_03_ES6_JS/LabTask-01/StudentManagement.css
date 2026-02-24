@@ -1,0 +1,33 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7fb;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #61aebc;
+  color: rgb(0, 0, 0);
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;   /* Bigger size */
+  font-weight: 800;    /* Heavy bold */
+  letter-spacing: 1.5px; /* Slight spacing for impact */
+  margin: 0;
+}
+
+.student-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+}
+
+.student-card h2 {
+  color: #0e324c;
+}
