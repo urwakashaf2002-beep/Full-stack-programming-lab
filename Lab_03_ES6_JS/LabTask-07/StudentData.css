@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #360b64, #541f58);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Cards container */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Student Card */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 6px solid #3c1e5c;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #521b59;
+}
+
+.card p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.card span {
+  font-weight: 600;
+  color: #3a1e57;
+}
+
+/* Footer */
+footer {
+  background: #1e1e2f;
+  color: #c7c7c7;
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+}

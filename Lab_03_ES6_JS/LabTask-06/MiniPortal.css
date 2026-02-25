@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(120deg, #d79bbe, #b1749a); 
+  font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.portal {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  width: 400px;
+}
+
+.portal h2 {
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.portal button {
+  padding: 12px 20px;
+  background: #ba729b;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.portal button:hover {
+  background: #d4b8c8;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+}

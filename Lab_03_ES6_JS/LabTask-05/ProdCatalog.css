@@ -1,0 +1,59 @@
+/* ProdCatalog.css */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f4f9;
+  padding: 40px;
+  margin: 0;
+}
+
+h1 {
+  color: #4a148c;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls input {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+}
+
+.controls button {
+  padding: 10px 16px;
+  background: #4a148c;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #6a1b9a;
+}
+
+#result {
+  margin-top: 25px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: 16px;
+  color: #333;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
