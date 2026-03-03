@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chained Style Editor</title>
+    <link rel="stylesheet" href="ChainStyleEditor.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="editor-container">
+    <h2>✨ Live Style Editor ✨</h2>
+
+    <div class="controls">
+        <button id="styleAll">Apply Theme</button>
+        <button id="toggleBold">Bold</button>
+        <button id="toggleItalic">Italic</button>
+        <button id="increaseFont">A+</button>
+        <button id="decreaseFont">A-</button>
+    </div>
+
+    <div class="text-box">
+        <p id="editableText">
+            This text can be styled dynamically using jQuery chaining.
+        </p>
+    </div>
+</div>
+
+<script src="ChainStyleEditor.js"></script>
+</body>
+</html>

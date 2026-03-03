@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Data Fetcher</title>
+    <link rel="stylesheet" href="APIDataFetcher.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+        <h1>📘 Article Feed</h1>
+        <p>Latest English posts fetched dynamically</p>
+    </header>
+
+    <div id="loader" class="loader">Loading...</div>
+
+    <div id="postContainer" class="card-grid"></div>
+
+    <div class="btn-container">
+        <button id="loadMore">Load More Articles</button>
+    </div>
+</div>
+
+<script src="APIDataFetcher.js"></script>
+</body>
+</html>

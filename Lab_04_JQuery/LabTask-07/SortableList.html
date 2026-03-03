@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sortable Task Board</title>
+
+    <link rel="stylesheet"
+          href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="SortableList.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+<div class="board-wrapper">
+    <div class="board-header">
+        <h1>🗂 My Project Board</h1>
+        <p>Drag and reorder my workflow items</p>
+    </div>
+
+    <div class="kanban-container">
+        <ul id="sortable" class="task-list">
+            <li class="task-card accent1">Design Homepage UI</li>
+            <li class="task-card accent2">Develop Backend APIs</li>
+            <li class="task-card accent3">Database Integration</li>
+            <li class="task-card accent4">Testing & Debugging</li>
+            <li class="task-card accent5">Deployment</li>
+        </ul>
+    </div>
+</div>
+
+<script src="SortableList.js"></script>
+
+</body>
+</html>

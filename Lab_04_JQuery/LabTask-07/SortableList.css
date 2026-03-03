@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dbe7f3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main wrapper */
+.board-wrapper {
+    width: 650px;
+}
+
+/* Header */
+.board-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.board-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #365473;
+}
+
+.board-header p {
+    color: #6c757d;
+}
+
+/* Board container */
+.kanban-container {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* List reset */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Task cards */
+.task-card {
+    padding: 16px 20px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    color: white;
+    font-weight: 600;
+    cursor: grab;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.task-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Professional color palette */
+.accent1 { background: #4361ee; }
+.accent2 { background: #3a0ca3; }
+.accent3 { background: #7209b7; }
+.accent4 { background: #f72585; }
+.accent5 { background: #2a9d8f; }
+
+/* Dragging effect */
+.task-card.ui-sortable-helper {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    opacity: 0.9;
+}
