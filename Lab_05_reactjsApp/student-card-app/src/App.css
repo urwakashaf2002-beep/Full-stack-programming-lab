@@ -1,0 +1,94 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background with border */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  min-height: 100vh;
+  padding: 30px 20px;
+  color: #333;
+  border: 8px solid #10589f; /* page border */
+}
+
+/* App container */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Fancy heading */
+.fancy-heading {
+  font-size: 2.4rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #2c3e50;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+/* Stair alignment */
+.card-stair {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Student card */
+.student-card {
+  border-radius: 12px;
+  padding: 20px;
+  width: 380px;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.student-card:hover {
+  transform: scale(1.05);
+}
+
+/* Stair positions */
+.student-card.left {
+  align-self: flex-start;
+}
+
+.student-card.center {
+  align-self: center;
+}
+
+.student-card.right {
+  align-self: flex-end;
+}
+
+/* Card content */
+.card-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-rollno {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  opacity: 0.85;
+}
+
+.card-info {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}

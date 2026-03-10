@@ -1,0 +1,77 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e3d8ce, #ffffff); /* light grey to white */
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* App container */
+.app { max-width: 900px; margin: 0 auto; text-align: center; }
+
+h1 { color: #2d3748; font-size: 2.4rem; margin-bottom: 8px; }
+.subtitle { color: #4a5568; margin-bottom: 40px; }
+
+/* Greeting layout */
+.greeting-container { display: flex; flex-direction: column; gap: 20px; }
+
+.greeting-card {
+  border-radius: 20px;
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+.greeting-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.4);
+}
+
+/* Emoji */
+.greeting-emoji { font-size: 3rem; flex-shrink: 0; }
+
+/* Text styling */
+.time-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(0,0,0,0.6);
+  margin-bottom: 4px;
+}
+.greeting-message {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 6px;
+}
+.greeting-name {
+  color: #4a5568;
+  font-size: 1rem;
+}
+.greeting-name span {
+  background: rgba(0,0,0,0.1);
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+/* Time of day gradients with unique contrasts */
+.morning {
+  background: linear-gradient(135deg, #fceabb, #f8b500); /* golden sunrise */
+}
+.afternoon {
+  background: linear-gradient(135deg, #a3d4c4, #426c5f); /* aqua-teal daylight */
+}
+.evening {
+  background: linear-gradient(135deg, #f1caae, #ee0979); /* fiery sunset */
+}
+.night {
+  background: linear-gradient(135deg, #e0eafc, #3a5a87); /* soft night sky */
+  border: 1px solid rgba(0,0,0,0.1);
+}
