@@ -1,0 +1,84 @@
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 100;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 28px 24px 24px;
+  border-bottom: 1px solid var(--border);
+}
+.logoIcon { color: var(--accent-gold); font-size: 22px; }
+.logoText {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+.nav { display: flex; flex-direction: column; gap: 4px; padding: 20px 14px; flex: 1; }
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.15s;
+  border: 1px solid transparent;
+}
+.navItem:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+.navItem.active {
+  background: var(--accent-gold-glow);
+  color: var(--accent-gold);
+  border-color: rgba(240,180,41,0.3);
+  font-weight: 600;
+}
+.navIcon { font-size: 16px; }
+.bottom { padding: 16px 14px; border-top: 1px solid var(--border); }
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px 14px;
+}
+.avatar {
+  width: 36px; height: 36px;
+  background: var(--accent-gold-glow);
+  border: 1px solid rgba(240,180,41,0.35);
+  color: var(--accent-gold);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.userName { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+.userEmail { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+.logout {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  padding: 10px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.logout:hover { border-color: var(--danger); color: var(--danger); background: var(--danger-bg); }
