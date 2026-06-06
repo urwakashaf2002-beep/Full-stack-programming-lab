@@ -1,8 +1,0 @@
-.layout { display: flex; min-height: 100vh; }
-.main {
-  margin-left: 250px;
-  flex: 1;
-  padding: 36px 40px;
-  min-height: 100vh;
-  background: var(--bg-primary);
-}
